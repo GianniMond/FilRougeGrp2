@@ -1,0 +1,67 @@
+//////////// Nom des méthodes selon les pages ////////////
+
+Inscription et Authentification :
+
+
+Sommaire : 
+
+
+Listes des projets : 
+CreatingProject
+StatutProject
+AddDiscussProject
+AddCommentProject
+DeleteProject
+
+
+Projet détaillés : 
+AddCommentDetailProject
+MoveTaskDetailProject
+AddTaskDetailProject
+ModifDetailProject
+DeleteDetailProject
+
+Listes des équipes : 
+DeleteTeam
+AddTeam
+ModifTeam
+
+Listes membres des équipes : 
+MoveMemberTeam
+AddMemberTeam
+ModifMemberTeam
+DeleteMemberTeam
+
+
+//////////// Nom des pages ////////////
+
+components : 
+FooterComponent
+HeaderComponent
+NavBarComponent
+
+views : 
+
+AuthAndConnexView :
+AuthAndConnex.css
+AuthAndConnex.jsx
+
+SommaireView :
+Sommaire.css
+Sommaire.jsx
+
+ProjectListView : 
+ProjectList.css
+ProjectList.jsx
+
+DetailProjectListView : 
+DetailProjectList.css
+DetailProjectList.jsx
+
+TeamListView : 
+TeamList.css 
+TeamList.jsx
+
+DetailTeamListView : 
+DetailTeamList.css 
+DetailTeamList.jsx
