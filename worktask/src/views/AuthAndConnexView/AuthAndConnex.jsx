@@ -17,16 +17,9 @@ const AuthAndConnex = () => {
 
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    return (     
-=======
+
     return (
->>>>>>> 19c987fcb8d1710f1e8ca937dec5d88ffcea1dd1
-=======
-    return (
- 
->>>>>>> LucieD
+
         <div className='background'>
             <form class="form-group">
                 <div class="demandes">
