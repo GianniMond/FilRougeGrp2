@@ -9,6 +9,13 @@ color: #334e58; (gris foncé)
 color : #05a8aa; (bleu-vert)
 color : #dc602e; (orange)
 
+** Background-color: 
+
+background: radial-gradient(ellipse at top, #05a8aa, transparent),            
+            radial-gradient(ellipse at bottom, #b8d5b8, transparent);
+background-size: 100%;
+height: 85vh;
+
 ** Boutons classiques :
 
 height: auto;
@@ -17,4 +24,6 @@ border-radius: 10px;
 
 ** Boutons liens : (+ ':hover' à coté de la classe en css pour survol du bouton)
 
+opacity: 70%; (sans hover)
+opacity: 100%; (sans hover)
 text-decoration: none;
