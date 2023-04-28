@@ -9,13 +9,12 @@ import {
 } from 'react-router-dom';
 import ProjetList from '../../views/ProjectListView/ProjectList';
 import TeamList from '../../views/TeamListView/TeamList';
+import AuthAndConnex from '../../views/AuthAndConnexView/AuthAndConnex';
+import DetailProjetList from '../../views/DetailProjectListView/DetailProjectList';
 
 const NavBar = () => {
     return (
         <div>
-
-            {/* Insertion du routeur  */}
-            <BrowserRouter>
                 <div className='navbar'>
                     {/* Def des liens */}
                     <button className='bouton_navbar'>
@@ -27,14 +26,16 @@ const NavBar = () => {
                     <button className='bouton_navbar'>
                         <a>Recherche</a>
                     </button>
+                    <Link to="/detailProjetList"></Link>
                 </div>
 
                 {/* Création des Routes */}
                 <Routes>
+                    <Route path='/' element={<AuthAndConnex/>}/>
                     <Route path='/projetList' element={<ProjetList/>}/>
+                    <Route path='/detailProjetList' element={<DetailProjetList/>}/>
                     <Route path='/teamList' element={<TeamList/>}/>
                 </Routes>
-            </BrowserRouter>
             {/* Full Execution */}
             <Outlet/>
 
