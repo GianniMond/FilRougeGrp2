@@ -25,6 +25,7 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
             <div className='background_projet'>
                 <div className='cards_projet'>
                     <div class="card">
+<<<<<<< HEAD
                         {projets.map(projet =>
                         <div class="card-header"> Projet {projet.nom} </div>
                             )}
@@ -35,9 +36,19 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
                             )}
                             <li class="list-group-item">Task</li>
                         </ol>
+=======
+                        <div class="card-header"> Projet n°1 </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Task</li>
+                            <li class="list-group-item">Task</li>
+                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">A second item</li>
+                            <li class="list-group-item">A third item</li>
+                        </ul>
+>>>>>>> 19c987fcb8d1710f1e8ca937dec5d88ffcea1dd1
                         <button class="btn btn-secondary" onClick={handleTaskClick}>Accès au projet</button>
                     </div>
-                </div>
+               
                 <div className='cards_projet'>
                     <div class="card">
                         <div class="card-header"> Projet n°2 </div>
@@ -51,10 +62,13 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
                         <button class="btn btn-secondary">Accès au projet</button>
                     </div>
                 </div>
-                <div>
+                
+            </div>  
+                   <div>
                     <button class="btn btn-dark">Ajouter un projet</button>
                 </div>
-            </div>
+         </div>
+
         </div>
     );
 };

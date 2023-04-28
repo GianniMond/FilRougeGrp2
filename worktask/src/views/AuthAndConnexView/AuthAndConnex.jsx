@@ -16,9 +16,7 @@ const AuthAndConnex = () => {
         navigate("/projetList");
     }
 
-
     return (
-
         <div className='background'>
             <form class="form-group">
                 <div class="demandes">
