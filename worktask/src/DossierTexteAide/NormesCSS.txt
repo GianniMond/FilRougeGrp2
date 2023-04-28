@@ -1,0 +1,20 @@
+//////////// Nom des méthodes selon les pages ////////////
+
+** Codes couleur:
+
+color : white;
+color : #faaa8d; (orange clair)
+color : #b8d5b8; (vert clair)
+color: #334e58; (gris foncé)
+color : #05a8aa; (bleu-vert)
+color : #dc602e; (orange)
+
+** Boutons classiques :
+
+height: auto;
+width : 300px;
+border-radius: 10px;
+
+** Boutons liens : (+ ':hover' à coté de la classe en css pour survol du bouton)
+
+text-decoration: none;
