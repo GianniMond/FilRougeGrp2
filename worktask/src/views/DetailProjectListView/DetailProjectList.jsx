@@ -18,16 +18,6 @@ const DetailProjectList = () => {
                     <div className='card'>Terminée</div>
                 </div>
             </div>
-<<<<<<< HEAD
-            <div>
-                <div>Importante</div>
-                <div>A faire</div>
-                <div>En cours</div>
-                <div>A vérifier</div>
-                <div>Terminée</div>
-            </div>
-=======
->>>>>>> LucieD
         </div>
     );
 };
