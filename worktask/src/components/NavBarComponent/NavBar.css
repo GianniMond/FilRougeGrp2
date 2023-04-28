@@ -1,0 +1,27 @@
+.navbar {
+    background-color:#b8d5b8;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bouton_navbar {
+    background-color: #334e58;
+    height: auto;
+    width : 300px;
+    border-radius: 10px;
+    color : white;
+}
+.bouton_navbar:hover {
+    color : #faaa8d;
+}
+
+.bouton_navbar a {
+    color : white;
+    text-decoration: none;
+}
+
+.bouton_navbar a:hover{
+    color : #faaa8d;
+}
