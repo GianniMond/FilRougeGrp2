@@ -17,7 +17,7 @@ const AuthAndConnex = () => {
 
     }
 
-    return (
+    return (     
         <div className='background'>
             <form class="form-group">
                 <div class="demandes">
@@ -27,8 +27,8 @@ const AuthAndConnex = () => {
                     <input type="password" className="form-control" id="motDePasseConnex" placeholder="******" />
                 </div>
                 <div class="boutons">
-                    <button type="submit" className="btn btn_connexview">Connexion</button>
-                    <button type="submit" className="btn btn_connexview">Inscription</button>
+                    <button type="submit" onClick={handleConnexionClick} className="btn btn_connexview">Connexion</button>
+                    <button type="submit" onClick={handleInscriptionClick} className="btn btn_connexview">Inscription</button>
                 </div>
             </form>
         </div>
