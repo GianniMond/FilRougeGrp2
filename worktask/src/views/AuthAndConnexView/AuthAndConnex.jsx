@@ -1,8 +1,22 @@
 import React from 'react';
 import './AuthAndConnex.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const AuthAndConnex = () => {
+
+    let navigate = useNavigate();
+
+    function handleConnexionClick(event) {
+        event.preventDefault();
+        navigate("/projetList");
+    }
+
+    function handleInscriptionClick(event) {
+        event.preventDefault();
+        navigate("/projetList");
+
+    }
+
     return (
         <div className='background'>
             <form class="form-group">
@@ -17,7 +31,6 @@ const AuthAndConnex = () => {
                     <button type="submit" className="btn btn_connexview">Inscription</button>
                 </div>
             </form>
-
         </div>
     );
 };
