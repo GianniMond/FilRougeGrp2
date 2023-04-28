@@ -1,0 +1,34 @@
+.Cards_teams{
+    display: flex;
+    justify-content: center;
+    size: 40px;
+
+}
+
+.card{
+    width: 260px;
+    margin: 30px;
+    height: max-content; 
+    margin-top: 30px;
+
+}
+
+.Background {
+    background: radial-gradient(ellipse at top, #05a8aa, transparent), radial-gradient(ellipse at bottom, #b8d5b8, transparent); 
+    background-size: 100%; height: 85vh;
+}
+
+.card-header{
+    opacity: 85%;
+    color: #b85129;
+    background-color: white;
+    font-size: x-large;
+
+}
+
+.list-group-item{
+    background-color: #faaa8d;
+    opacity: 75%;
+    color: black;
+    padding: 8px;
+}

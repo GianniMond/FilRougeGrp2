@@ -11,9 +11,6 @@ const Header = () => {
                 <h2 className='title_header'>WorkTask</h2>
                 <p className='sous_titre'>Facilitez vous la task</p>
             </div>
-            {/* <div id='bot_header'>
-                
-            </div> */}
         </div>
 
     );
