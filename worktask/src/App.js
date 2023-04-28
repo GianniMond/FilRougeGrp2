@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/HeaderComponent/Header';
@@ -7,12 +8,11 @@ import AuthAndConnex from './views/AuthAndConnexView/AuthAndConnex';
 
 
 function App() {
-  return (
 
+  return (
     <div className="App">
       <Header />
       <NavBar/>
-      <AuthAndConnex/>
       <Footer />
     </div>
   );
