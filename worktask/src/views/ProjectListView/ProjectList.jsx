@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectList.css';
 import { useNavigate } from 'react-router-dom';
 
-const ProjectList = () => {
+const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks }) => {
 
     let navigate = useNavigate();
 
@@ -12,6 +12,12 @@ const ProjectList = () => {
     function handleTaskClick(event) {
         event.preventDefault();
         navigate("/detailProjetList");
+
+        const handleDeleteClick = (index) => {
+
+            setProjets(projets.filter( projet => projet.index !== index))
+              }
+            
     }
     return (
         <div>
@@ -19,13 +25,15 @@ const ProjectList = () => {
             <div className='background_projet'>
                 <div className='cards_projet'>
                     <div class="card">
-                        <div class="card-header"> Projet n°1 </div>
+                        {projets.map(projet =>
+                        <div class="card-header"> Projet {projet.nom} </div>
+                            )}
                         <ol class="list-group list-group-flush">
+                            {tasks.map(task =>
+
+                            <li class="list-group-item">{task.nom}</li>
+                            )}
                             <li class="list-group-item">Task</li>
-                            <li class="list-group-item">Task</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
                         </ol>
                         <button class="btn btn-secondary" onClick={handleTaskClick}>Accès au projet</button>
                     </div>
