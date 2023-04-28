@@ -4,23 +4,20 @@ import './DetailProjectList.css';
 
 const DetailProjectList = () => {
     return (
-<<<<<<< HEAD
         <div className='background'>
-            <div className='menu-left'>
-                <div>membres du projet</div>
-                <div>Ajouter tache</div>
+            <div className="pagestyle">
+                <div className='menu-left'>
+                    <div className='card teamproject'>Membres du projet</div>
+                    <button className='btn addtask'> + Ajouter une tâche</button>
+                </div>
+                <div className='status-task'>
+                    <div className='card'>Importante</div>
+                    <div className='card'>A faire</div>
+                    <div className='card'>En cours</div>
+                    <div className='card'>A vérifier</div>
+                    <div className='card'>Terminée</div>
+                </div>
             </div>
-            <div>
-                <div>Importante</div>
-                <div>A faire</div>
-                <div>En cours</div>
-                <div>A vérifier</div>
-                <div>Terminée</div>
-            </div>
-=======
-        <div>
-            <p>test</p>
->>>>>>> db121e241546c52256aa951060da4d9cbc7633a7
         </div>
     );
 };

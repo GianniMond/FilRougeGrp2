@@ -1,0 +1,32 @@
+.menu-left{    
+    background-color: #05a8aa;
+    display: 
+}
+
+.pagestyle {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+}
+.status-task {
+    display : grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 85vh;
+}
+
+.addtask {
+    height: auto;
+    width : 300px;
+    border-radius: 10px;
+    background-color:white;
+    opacity: 100%;
+}
+
+.addtask:hover {
+    background-color:white;
+    opacity: 70%;
+}
+
+.card{
+    background-color: white;
+}
