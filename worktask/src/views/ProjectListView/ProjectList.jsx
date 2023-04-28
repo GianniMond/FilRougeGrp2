@@ -20,13 +20,13 @@ const ProjectList = () => {
                 <div className='cards_projet'>
                     <div class="card">
                         <div class="card-header"> Projet n°1 </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
+                        <ol class="list-group list-group-flush">
+                            <li class="list-group-item">Task</li>
+                            <li class="list-group-item">Task</li>
                             <li class="list-group-item">A third item</li>
                             <li class="list-group-item">A second item</li>
                             <li class="list-group-item">A third item</li>
-                        </ul>
+                        </ol>
                         <button class="btn btn-secondary" onClick={handleTaskClick}>Accès au projet</button>
                     </div>
                 </div>
@@ -42,6 +42,9 @@ const ProjectList = () => {
                         </ul>
                         <button class="btn btn-secondary">Accès au projet</button>
                     </div>
+                </div>
+                <div>
+                    <button class="btn btn-dark">Ajouter un projet</button>
                 </div>
             </div>
         </div>
