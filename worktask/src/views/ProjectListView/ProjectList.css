@@ -1,3 +1,27 @@
-.text-center{
+.text-center {
     width: 18rem;
+}
+
+.cards_projet {
+    display: flex;
+    justify-content: center;
+    size: 40px;
+}
+
+.card {
+    width: 240px;
+    margin: 30px;
+}
+
+.background_projet {
+    background: radial-gradient(ellipse at top, #05a8aa, transparent), radial-gradient(ellipse at bottom, #b8d5b8, transparent);
+    background-size: 100%;
+    height: 85vh;
+}
+
+.card-header {
+    opacity: 85%;
+    color: #b85129;
+    background-color: white;
+    font-size: x-large;
 }

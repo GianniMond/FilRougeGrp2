@@ -14,7 +14,6 @@ const AuthAndConnex = () => {
     function handleInscriptionClick(event) {
         event.preventDefault();
         navigate("/projetList");
-
     }
 
     return (
