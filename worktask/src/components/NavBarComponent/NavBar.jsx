@@ -11,16 +11,8 @@ import ProjetList from '../../views/ProjectListView/ProjectList';
 import TeamList from '../../views/TeamListView/TeamList';
 import AuthAndConnex from '../../views/AuthAndConnexView/AuthAndConnex';
 import DetailProjetList from '../../views/DetailProjectListView/DetailProjectList';
-import { memberList } from '../../data/memberlist';
-import { projetsList } from '../../data/projetslist';
-import { tasksList } from '../../data/taskslist';
 
 const NavBar = () => {
-    /* Const pour les deux datas */
-    const [projets, setProjets] = useState(projetsList)
-    const [members, setMembers] = useState(memberList)
-    const [tasks, setTasks] = useState(tasksList)
-
 
     return (
         <div>
@@ -37,32 +29,12 @@ const NavBar = () => {
                 </button>
                 <Link to="/detailProjetList"></Link>
             </div>
-
             {/* Création des Routes */}
             <Routes>
-                <Route path='/' element={<AuthAndConnex
-                    members={members} setMembers={setMembers}
-                    projets={projets} setProjets={setProjets}
-                    tasks={tasks} setTasks={setTasks}
-                />} />
-                <Route path='/projetList' element={<ProjetList
-                    members={members} setMembers={setMembers}
-                    projets={projets} setProjets={setProjets}
-                    tasks={tasks} setTasks={setTasks}
-
-                />} />
-                <Route path='/detailProjetList' element={<DetailProjetList
-                    members={members} setMembers={setMembers}
-                    projets={projets} setProjets={setProjets}
-                    tasks={tasks} setTasks={setTasks}
-
-                />} />
-                <Route path='/teamList' element={<TeamList
-                    members={members} setMembers={setMembers}
-                    projets={projets} setProjets={setProjets}
-                    tasks={tasks} setTasks={setTasks}
-
-                />} />
+                <Route path='/' element={<AuthAndConnex/>} />
+                <Route path='/projetList' element={<ProjetList/>} />
+                <Route path='/detailProjetList' element={<DetailProjetList/>} />
+                <Route path='/teamList' element={<TeamList/>} />
             </Routes>
             {/* Full Execution */}
             <Outlet />

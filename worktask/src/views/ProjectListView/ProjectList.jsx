@@ -2,7 +2,7 @@ import React from 'react';
 import './ProjectList.css';
 import { useNavigate } from 'react-router-dom';
 
-const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks }) => {
+const ProjectList = () => {
 
     let navigate = useNavigate();
 
@@ -12,11 +12,6 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
     function handleTaskClick(event) {
         event.preventDefault();
         navigate("/detailProjetList");
-
-        const handleDeleteClick = (index) => {
-
-            setProjets(projets.filter( projet => projet.index !== index))
-              }
             
     }
     return (
@@ -25,27 +20,11 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
             <div className='background_projet'>
                 <div className='cards_projet'>
                     <div class="card">
-<<<<<<< HEAD
-                        {projets.map(projet =>
-                        <div class="card-header"> Projet {projet.nom} </div>
-                            )}
+                        <div class="card-header"> Projet n°1 </div>
                         <ol class="list-group list-group-flush">
-                            {tasks.map(task =>
-
-                            <li class="list-group-item">{task.nom}</li>
-                            )}
+                            <li class="list-group-item">Task</li>
                             <li class="list-group-item">Task</li>
                         </ol>
-=======
-                        <div class="card-header"> Projet n°1 </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Task</li>
-                            <li class="list-group-item">Task</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                        </ul>
->>>>>>> 19c987fcb8d1710f1e8ca937dec5d88ffcea1dd1
                         <button class="btn btn-secondary" onClick={handleTaskClick}>Accès au projet</button>
                     </div>
                
@@ -53,11 +32,9 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
                     <div class="card">
                         <div class="card-header"> Projet n°2 </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">An item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
-                            <li class="list-group-item">A second item</li>
-                            <li class="list-group-item">A third item</li>
+                            <li class="list-group-item">Task</li>
+                            <li class="list-group-item">Task</li>
+
                         </ul>
                         <button class="btn btn-secondary">Accès au projet</button>
                     </div>
@@ -65,7 +42,7 @@ const ProjectList = ({ projets, setProjets, members, setMembers, tasks, setTasks
                 
             </div>  
                    <div>
-                    <button class="btn btn-dark">Ajouter un projet</button>
+                    <button class="btn btn-primary">Ajouter un projet</button>
                 </div>
          </div>
 
