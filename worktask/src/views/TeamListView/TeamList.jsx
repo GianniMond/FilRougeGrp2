@@ -4,33 +4,37 @@ import './TeamList.css';
 const TeamList = () => {
     return (
     <div className='Background'>
-  <div className='Cards_projet'>
+  <div className='Cards_teams'>
         <div class="card">
         <div class="card-header">
-          Nom du projet
+         Indication du projet
          </div>
     <ul class="list-group list-group-flush">
-     <li class="list-group-item">An item</li>
-     <li class="list-group-item">A second item</li>
-     <li class="list-group-item">A third item</li>
+     <li class="list-group-item">Personne 1 du projet</li>
+     <li class="list-group-item">Personne 2 du projet</li>
+     <li class="list-group-item">...</li>
+     <li class="list-group-item"></li>
+     <li class="list-group-item"></li>
     </ul>
 </div>
 
       <div class="card">
       <div class="card-header">
-        Nom du projet
+      Projet n°2
        </div>
   <ul class="list-group list-group-flush">
-   <li class="list-group-item">An item</li>
+   <li class="list-group-item"></li>
   </ul>
 </div>
 
 <div class="card">
       <div class="card-header">
-        Nom du projet
+      Projet n°3
        </div>
   <ul class="list-group list-group-flush">
-   <li class="list-group-item">An item</li>
+   <li class="list-group-item"></li>
+   <li class="list-group-item"></li>
+   <li class="list-group-item"></li>
   </ul>
 </div>
 </div>
