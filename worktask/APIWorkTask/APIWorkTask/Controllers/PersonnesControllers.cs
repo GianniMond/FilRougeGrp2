@@ -24,11 +24,5 @@ namespace APIWorkTask.Controllers
             }
 
         }
-
-
-        public IActionResult Index()
-        {
-            return View();
-        }
     }
 }
