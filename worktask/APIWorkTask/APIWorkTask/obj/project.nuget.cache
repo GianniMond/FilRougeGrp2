@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iZVIdkYoD+TjqJpe1TO7FgrZeb8Q6U7Ctq3kcAqUdKoICQakHWKxPUUUBeARElhsrQrNfq9Dp1aEcVVI92xg6A==",
+  "dgSpecHash": "t1/l/BVgGAz+MljlReOKcDqn6wAEEcgox4V9Gllh4y0KV54quQUCT1Vn8p7P1+hunpzlwjQH+SLGup54xQiJwQ==",
   "success": true,
-  "projectFilePath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+  "projectFilePath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
