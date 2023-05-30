@@ -25,5 +25,5 @@ border-radius: 10px;
 ** Boutons liens : (+ ':hover' à coté de la classe en css pour survol du bouton)
 
 opacity: 70%; (sans hover)
-opacity: 100%; (sans hover)
+opacity: 100%; (avec hover)
 text-decoration: none;

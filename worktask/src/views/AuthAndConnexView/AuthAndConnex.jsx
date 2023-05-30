@@ -14,9 +14,12 @@ const AuthAndConnex = () => {
     function handleInscriptionClick(event) {
         event.preventDefault();
         navigate("/projetList");
+
     }
 
+
     return (
+
         <div className='background'>
             <form class="form-group">
                 <div class="demandes">

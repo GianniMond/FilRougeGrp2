@@ -3,7 +3,7 @@
     height: 50px;
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .bouton_navbar {
@@ -12,7 +12,9 @@
     width : 300px;
     border-radius: 10px;
     color : white;
+    margin: 0px 80px;
 }
+
 .bouton_navbar:hover {
     color : #faaa8d;
 }
