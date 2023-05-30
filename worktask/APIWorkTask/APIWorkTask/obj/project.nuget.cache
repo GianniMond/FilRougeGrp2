@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9jiU/1dseUZgpPpWCAfjRG/W+O5uyCCUsNyUiYmADmTtUIe5dKv9qBV/+dEDP8e+WmrAubVSrvsoO/FqnlUSSA==",
+  "dgSpecHash": "YgY1ZOD3PrMo9e7ZLFCZdgnTaWVE/vTceTqh+vGYHIwzgPwCVy5Cj1V2SI0VsPuLEtVuFdPXJxhnHsR5MJntCw==",
   "success": true,
-  "projectFilePath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+  "projectFilePath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -80,5 +80,12 @@
     "C:\\Users\\Administrateur\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

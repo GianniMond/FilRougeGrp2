@@ -7,6 +7,7 @@ namespace APIWorkTask.Data
     {
         public ApplicationDbContext(DbContextOptions options) : base(options) 
         {
+
         }
 
         public DbSet<Personne> Personnes { get; set; }
