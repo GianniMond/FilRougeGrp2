@@ -8,7 +8,7 @@ namespace APIWorkTask.Models
         public int Id { get; set; }
         [Required]
         public string Titre { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         [Required]
         public Avancement Avancement { get; set; }
         public int PersonneID { get; set; }
