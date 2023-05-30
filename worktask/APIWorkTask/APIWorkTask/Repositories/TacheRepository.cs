@@ -6,10 +6,17 @@ namespace APIWorkTask.Repositories
 {
     public class TacheRepository
     {
+        private ApplicationDbContext context;
+
         private ApplicationDbContext _context {  get; set; }
         public TacheRepository(DbContextOptions<ApplicationDbContext> options)
         {
             _context = new ApplicationDbContext(options);
+        }
+
+        public TacheRepository(ApplicationDbContext context)
+        {
+            this.context = context;
         }
 
         public Taches GetById(int id)

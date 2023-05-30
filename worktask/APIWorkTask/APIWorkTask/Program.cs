@@ -1,15 +1,20 @@
+using APIWorkTask.Data;
+using APIWorkTask.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-public void ConfigureServices(IServiceCollection services)
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+void ConfigureServices(IServiceCollection services)
 {
     services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-    services.AddScoped<TacheRepository>();
 
-    services.AddControllers().AddNewtonsoftJson();
+    services.AddScoped<TacheRepository>());
+
+    services.AddControllers();
     services.AddEndpointsApiExplorer();
     services.AddSwaggerGen();
 
