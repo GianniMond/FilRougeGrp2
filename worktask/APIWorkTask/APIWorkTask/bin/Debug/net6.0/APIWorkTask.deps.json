@@ -8,10 +8,17 @@
     ".NETCoreApp,Version=v6.0": {
       "APIWorkTask/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.EntityFrameworkCore": "7.0.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
           "Newtonsoft.Json": "13.0.3",
+=======
+          "FluentAssertions": "6.11.0",
+          "Microsoft.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Tools": "7.0.5",
+>>>>>>> e0a9275459d29508ef0a6bf80b7c7ae34917c00f
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -52,6 +59,20 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
+      "FluentAssertions/6.11.0": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "5.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/FluentAssertions.dll": {
+            "assemblyVersion": "6.11.0.0",
+            "fileVersion": "6.11.0.0"
+          }
+        }
+      },
+>>>>>>> e0a9275459d29508ef0a6bf80b7c7ae34917c00f
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -459,6 +480,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "Newtonsoft.Json/13.0.3": {
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {
@@ -467,6 +489,8 @@
           }
         }
       },
+=======
+>>>>>>> e0a9275459d29508ef0a6bf80b7c7ae34917c00f
       "Swashbuckle.AspNetCore/6.2.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "3.0.0",
@@ -778,6 +802,16 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "FluentAssertions/6.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aBaagwdNtVKkug1F3imGXUlmoBd8ZUZX8oQ5niThaJhF79SpESe1Gzq7OFuZkQdKD5Pa4Mone+jrbas873AT4g==",
+      "path": "fluentassertions/6.11.0",
+      "hashPath": "fluentassertions.6.11.0.nupkg.sha512"
+    },
+>>>>>>> e0a9275459d29508ef0a6bf80b7c7ae34917c00f
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
@@ -1044,6 +1078,7 @@
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
     },
+<<<<<<< HEAD
     "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
@@ -1051,6 +1086,8 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
+=======
+>>>>>>> e0a9275459d29508ef0a6bf80b7c7ae34917c00f
     "Swashbuckle.AspNetCore/6.2.3": {
       "type": "package",
       "serviceable": true,

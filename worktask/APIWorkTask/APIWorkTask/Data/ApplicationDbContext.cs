@@ -11,6 +11,8 @@ namespace APIWorkTask.Data
 
         public DbSet<Personne> Personnes { get; set; }
         public DbSet<Taches> Taches { get; set; }
+        public DbSet<Projets> Projets { get; set; }
     }
+ 
 
 }
