@@ -1,11 +1,18 @@
 using APIWorkTask.Data;
 using APIWorkTask.Repositories;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
+=======
+using Microsoft.IdentityModel;
+
+>>>>>>> BeforeMain
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
 
+<<<<<<< HEAD
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 void ConfigureServices(IServiceCollection services)
 {
@@ -17,11 +24,23 @@ void ConfigureServices(IServiceCollection services)
     services.AddControllers();
     services.AddEndpointsApiExplorer();
     services.AddSwaggerGen();
+=======
 
-}
+//void ConfigureServices(IServiceCollection services)
+//{
+//    services.AddDbContext<ApplicationDbContext>(options =>
+//        options.UseSqlServer(("DefaultConnection")));
+
+//    services.AddScoped<TacheRepository>();
+>>>>>>> BeforeMain
+
+//    services.AddControllers();
+//    services.AddEndpointsApiExplorer();
+//    services.AddSwaggerGen();
+
+//}
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

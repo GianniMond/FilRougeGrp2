@@ -48,6 +48,10 @@ namespace APIWorkTask.Repositories
             _context.Taches.Remove(tache);
             return _context.SaveChanges() > 0;
         }
-        
+
+        public static implicit operator TacheRepository(ApplicationDbContext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

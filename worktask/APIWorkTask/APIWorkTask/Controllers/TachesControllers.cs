@@ -13,7 +13,7 @@ namespace APIWorkTask.Controllers
 
         public TachesController(ApplicationDbContext context)
         {
-            _repository = new TacheRepository(context);
+            _repository = context;
         }
 
         [HttpGet("{id}")]
