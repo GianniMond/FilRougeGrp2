@@ -3,8 +3,9 @@
     "",
     "\\APIWorkTask",
     "\\APIWorkTask\\APIWorkTask",
-    "\\APIWorkTask\\APIWorkTask\\Data",
-    "\\APIWorkTask\\APIWorkTask\\Models"
+    "\\APIWorkTask\\APIWorkTask\\Controllers",
+    "\\APIWorkTask\\APIWorkTask\\Models",
+    "\\APIWorkTask\\APIWorkTask\\Repositories"
   ],
   "SelectedNode": "\\APIWorkTask\\APIWorkTask\\Models\\Taches.cs",
   "PreviewInSolutionExplorer": false
