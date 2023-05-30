@@ -1,4 +1,5 @@
-﻿using APIWorkTask.Models;
+﻿using APIWorkTask.Data;
+using APIWorkTask.Models;
 using APIWorkTask.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +13,7 @@ namespace APIWorkTask.Controllers
 
         public TachesController(ApplicationDbContext context)
         {
-            _repository = new TacheRepository(context);
+            _repository = context;
         }
 
         [HttpGet("{id}")]

@@ -6,10 +6,17 @@ namespace APIWorkTask.Repositories
 {
     public class TacheRepository
     {
+        private ApplicationDbContext context;
+
         private ApplicationDbContext _context {  get; set; }
         public TacheRepository(DbContextOptions<ApplicationDbContext> options)
         {
             _context = new ApplicationDbContext(options);
+        }
+
+        public TacheRepository(ApplicationDbContext context)
+        {
+            this.context = context;
         }
 
         public Taches GetById(int id)
@@ -41,6 +48,10 @@ namespace APIWorkTask.Repositories
             _context.Taches.Remove(tache);
             return _context.SaveChanges() > 0;
         }
-        
+
+        public static implicit operator TacheRepository(ApplicationDbContext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

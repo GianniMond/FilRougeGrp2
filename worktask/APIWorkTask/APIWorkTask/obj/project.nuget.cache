@@ -1,15 +1,12 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "t1/l/BVgGAz+MljlReOKcDqn6wAEEcgox4V9Gllh4y0KV54quQUCT1Vn8p7P1+hunpzlwjQH+SLGup54xQiJwQ==",
-=======
-  "dgSpecHash": "h8tUZFX3cJzq0iH4xAo0Tdz+w0YBaGTQ4cu7eTGj0QULg5U7JhsI/ZZva+r64FqPlImgUpLRVXUZrTSbETcfGw==",
->>>>>>> 5144e90cf486071d8e7b966ada7cb564f1ddf599
+  "dgSpecHash": "9jiU/1dseUZgpPpWCAfjRG/W+O5uyCCUsNyUiYmADmTtUIe5dKv9qBV/+dEDP8e+WmrAubVSrvsoO/FqnlUSSA==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+  "projectFilePath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Administrateur\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj": {}
+    "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj": {
+    "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+        "projectUniqueName": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
         "projectName": "APIWorkTask",
-        "projectPath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+        "projectPath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\",
+        "outputPath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"

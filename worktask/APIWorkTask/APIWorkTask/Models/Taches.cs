@@ -11,7 +11,7 @@ namespace APIWorkTask.Models
         public string? Description { get; set; }
         [Required]
         public Avancement Avancement { get; set; }
-        public int PersonneID { get; set; }
+        public int? PersonneID { get; set; }
     }
     public enum Avancement
     {
