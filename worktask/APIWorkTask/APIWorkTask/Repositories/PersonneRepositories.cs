@@ -9,10 +9,16 @@ namespace APIWorkTask.Repositories
     public class PersonneRepositories
     {
         private ApplicationDbContext _context;
+        private ApplicationDbContext context;
 
         public PersonneRepositories(DbContextOptions<ApplicationDbContext> options)
         {
             _context = new ApplicationDbContext(options);
+        }
+
+        public PersonneRepositories(ApplicationDbContext context)
+        {
+            this.context = context;
         }
 
         public Personne GetById(int id)
@@ -39,12 +45,19 @@ namespace APIWorkTask.Repositories
         public bool Update(Personne personne)
         {
             var newPersonne = GetById(personne.Id);
+            if (newPersonne == null)
+                return false;
+
             if (newPersonne.Nom != personne.Nom)
                 newPersonne.Nom = personne.Nom;
+
             if (newPersonne.Prenom != personne.Prenom)
                 newPersonne.Prenom = personne.Prenom;
+
             if (newPersonne.Email != personne.Email)
                 newPersonne.Email = personne.Email;
+
+            _context.SaveChanges();
             return true;
         }
     }
