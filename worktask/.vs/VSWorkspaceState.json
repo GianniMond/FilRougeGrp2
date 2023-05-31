@@ -3,9 +3,12 @@
     "",
     "\\APIWorkTask",
     "\\APIWorkTask\\APIWorkTask",
-    "\\APIWorkTask\\APIWorkTask\\Data",
-    "\\APIWorkTask\\APIWorkTask\\Models"
+    "\\APIWorkTask\\APIWorkTask\\bin",
+    "\\APIWorkTask\\APIWorkTask\\Controllers",
+    "\\json-mock-api",
+    "\\public",
+    "\\Services"
   ],
-  "SelectedNode": "\\APIWorkTask\\APIWorkTask\\Models\\Taches.cs",
+  "SelectedNode": "\\APIWorkTask\\APIWorkTask\\Controllers\\PersonnesControllers.cs",
   "PreviewInSolutionExplorer": false
 }
