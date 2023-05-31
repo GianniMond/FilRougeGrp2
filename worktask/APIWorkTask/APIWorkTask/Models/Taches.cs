@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Identity.Client;
+using System.ComponentModel.DataAnnotations;
 using System.Security.Cryptography.X509Certificates;
 
 namespace APIWorkTask.Models
@@ -11,15 +12,30 @@ namespace APIWorkTask.Models
         public string? Description { get; set; }
         [Required]
         public Avancement Avancement { get; set; }
+<<<<<<< HEAD
+        public int PersonneID { get; set; }
+
+        public Personne Personne { get; set; }
+
+        public int ProjetId { get; set; }
+        public Projet Projet { get; set; }
+=======
         public int? PersonneID { get; set; }
+
+        public Personne Personne { get; set; }
+
+        public int ProjetId { get; set; }
+        public Projet Projet { get; set; }
     }
+
     public enum Avancement
     {
         AFaire,
-        EnCours, 
+        EnCours,
         Importante,
-        AVerifier, 
+        AVerifier,
         Terminée
     }
-
 }
+
+

@@ -3,6 +3,7 @@
     "",
     "\\APIWorkTask",
     "\\APIWorkTask\\APIWorkTask",
+<<<<<<< HEAD
     "\\APIWorkTask\\APIWorkTask\\bin",
     "\\APIWorkTask\\APIWorkTask\\Controllers",
     "\\json-mock-api",
@@ -10,5 +11,12 @@
     "\\Services"
   ],
   "SelectedNode": "\\APIWorkTask\\APIWorkTask\\Controllers\\PersonnesControllers.cs",
+=======
+    "\\APIWorkTask\\APIWorkTask\\Controllers",
+    "\\APIWorkTask\\APIWorkTask\\Models",
+    "\\APIWorkTask\\APIWorkTask\\Repositories"
+  ],
+  "SelectedNode": "\\APIWorkTask\\APIWorkTask.sln",
+>>>>>>> Main
   "PreviewInSolutionExplorer": false
 }
