@@ -27,22 +27,14 @@ namespace APIWorkTask.Controllers
             return Ok(personne);
         }
 
-        //[HttpGet]
-        //public IActionResult GetAll()
-        //{
-        //    var personnes = _repository.GetAll();
-        //    return Ok(personnes);
-        //}
-
         [HttpPost]
         public IActionResult Create(Personne personne)
         {
-            if (ModelState.IsValid)
-            {
-                var personneId = _repository.Add(personne);
-                return CreatedAtAction(nameof(GetById), new { id = personneId }, personne);
-            }
-            return BadRequest(ModelState);
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var personneId = _repository.Add(personne);
+            return CreatedAtAction(nameof(GetById), new { id = personneId }, personne);
         }
 
         [HttpPut("{id}")]
@@ -51,16 +43,23 @@ namespace APIWorkTask.Controllers
             if (id != personne.Id)
                 return BadRequest();
 
-            if (ModelState.IsValid)
-            {
-                var updatedPersonne = _repository.Update(personne);
-                if (updatedPersonne == null)
-                    return NotFound();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-                return Ok(updatedPersonne);
-            }
-            return BadRequest(ModelState);
+            var updatedPersonne = _repository.Update(personne);
+            if (updatedPersonne == null)
+                return NotFound();
+
+            return Ok(updatedPersonne);
         }
+
+        //[HttpGet]
+        //public IActionResult GetAll()
+        //{
+        //    var personnes = _repository.GetAll();
+        //    return Ok(personnes);
+        //}
+
 
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

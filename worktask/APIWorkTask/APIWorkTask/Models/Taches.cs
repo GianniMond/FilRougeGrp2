@@ -12,6 +12,14 @@ namespace APIWorkTask.Models
         public string? Description { get; set; }
         [Required]
         public Avancement Avancement { get; set; }
+<<<<<<< HEAD
+        public int PersonneID { get; set; }
+
+        public Personne Personne { get; set; }
+
+        public int ProjetId { get; set; }
+        public Projet Projet { get; set; }
+=======
         public int? PersonneID { get; set; }
 
         public Personne Personne { get; set; }
