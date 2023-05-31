@@ -17,5 +17,7 @@ namespace APIWorkTask.Models
         public string MotDePasse { get; set; }
 
         public List<Taches> Taches { get; set; }
+        
+        public List<Projet> Projets { get; set; }
     }
 }

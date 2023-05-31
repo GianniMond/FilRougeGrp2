@@ -7,6 +7,7 @@ using Microsoft.IdentityModel;
 
 >>>>>>> BeforeMain
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 string connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
@@ -19,36 +20,28 @@ void ConfigureServices(IServiceCollection services)
     services.AddDbContext<ApplicationDbContext>(options =>
 
 
-    services.AddScoped<TacheRepository>());
-
-    services.AddControllers();
-    services.AddEndpointsApiExplorer();
-    services.AddSwaggerGen();
-=======
-
 //void ConfigureServices(IServiceCollection services)
 //{
 //    services.AddDbContext<ApplicationDbContext>(options =>
 //        options.UseSqlServer(("DefaultConnection")));
 
-//    services.AddScoped<TacheRepository>();
->>>>>>> BeforeMain
+    services.AddScoped<TacheRepository>());
 
-//    services.AddControllers();
-//    services.AddEndpointsApiExplorer();
-//    services.AddSwaggerGen();
+    services.AddControllers();
+    services.AddEndpointsApiExplorer();
+    services.AddSwaggerGen();
 
-//}
-var app = builder.Build();
+    var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    if (app.Environment.IsDevelopment())
+    {
+        app.UseSwagger();
+        app.UseSwaggerUI();
+    }
+
+    app.UseAuthorization();
+
+    app.MapControllers();
+
+    app.Run();
 }
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();

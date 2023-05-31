@@ -21,7 +21,11 @@ namespace APIWorkTask.Models
         public Projet Projet { get; set; }
 =======
         public int? PersonneID { get; set; }
->>>>>>> BeforeMain
+
+        public Personne Personne { get; set; }
+
+        public int ProjetId { get; set; }
+        public Projet Projet { get; set; }
     }
 
     public enum Avancement
@@ -34,4 +38,4 @@ namespace APIWorkTask.Models
     }
 }
 
-}
+

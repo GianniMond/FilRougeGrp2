@@ -2,6 +2,7 @@
 using APIWorkTask.Models;
 using APIWorkTask.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace APIWorkTask.Controllers
 {
@@ -11,11 +12,10 @@ namespace APIWorkTask.Controllers
     {
         private readonly PersonneRepositories _repository;
 
-        public PersonnesController(PersonneRepositories repository)
+        public PersonnesController(ApplicationDbContext context)
         {
-            _repository = repository;
+            _repository = new PersonneRepositories(context);
         }
-
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
@@ -33,8 +33,8 @@ namespace APIWorkTask.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var createdPersonne = _repository.Create(personne);
-            return CreatedAtAction(nameof(GetById), new { id = createdPersonne.Id }, createdPersonne);
+            var personneId = _repository.Add(personne);
+            return CreatedAtAction(nameof(GetById), new { id = personneId }, personne);
         }
 
         [HttpPut("{id}")]
@@ -53,11 +53,19 @@ namespace APIWorkTask.Controllers
             return Ok(updatedPersonne);
         }
 
+        //[HttpGet]
+        //public IActionResult GetAll()
+        //{
+        //    var personnes = _repository.GetAll();
+        //    return Ok(personnes);
+        //}
+
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var deletedPersonne = _repository.Delete(id);
-            if (deletedPersonne == null)
+            var deleted = _repository.Delete(id);
+            if (!deleted)
                 return NotFound();
 
             return NoContent();

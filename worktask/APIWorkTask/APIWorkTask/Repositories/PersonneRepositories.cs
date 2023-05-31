@@ -9,10 +9,16 @@ namespace APIWorkTask.Repositories
     public class PersonneRepositories
     {
         private ApplicationDbContext _context;
+        private ApplicationDbContext context;
 
         public PersonneRepositories(DbContextOptions<ApplicationDbContext> options)
         {
             _context = new ApplicationDbContext(options);
+        }
+
+        public PersonneRepositories(ApplicationDbContext context)
+        {
+            this.context = context;
         }
 
         public Personne GetById(int id)
