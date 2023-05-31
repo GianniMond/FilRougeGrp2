@@ -18,6 +18,7 @@ Projet détaillés :
 AddCommentDetailProject
 MoveTaskDetailProject
 AddTaskDetailProject
+DeleteTaskProject
 ModifDetailProject
 DeleteDetailProject
 
