@@ -2,13 +2,13 @@ import React from 'react';
 import './AuthAndConnex.css';
 import { useNavigate } from 'react-router-dom';
 
-const AuthAndConnex = () => {
+const AuthAndConnex = ({}) => {
 
     let navigate = useNavigate();
 
-    function handleConnexionClick(event) {
-        event.preventDefault();
-        navigate("/projetList");
+
+    function handleConnexionClick() {
+        return navigate("/projetList");
     }
 
     function handleInscriptionClick(event) {

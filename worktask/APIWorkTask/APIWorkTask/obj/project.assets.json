@@ -3775,11 +3775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+      "projectUniqueName": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
       "projectName": "APIWorkTask",
-      "projectPath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
+      "projectPath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\APIWorkTask.csproj",
       "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\",
+      "outputPath": "C:\\Formation\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3853,13 +3853,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problème de lecture du fichier cache C:\\Repos\\FilRougeGrp2\\worktask\\APIWorkTask\\APIWorkTask\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

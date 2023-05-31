@@ -1,10 +1,10 @@
 import React from 'react';
 import './TeamList.css';
 
-const TeamList = () => {
+const TeamList = ({ personnes, setPer}) => {
     return (
     <div className='Background'>
-  <div className='Cards_teams'>
+  {/* <div className='Cards_teams'>
         <div class="card">
         <div class="card-header">
          Indication du projet
@@ -37,7 +37,7 @@ const TeamList = () => {
    <li class="list-group-item"></li>
   </ul>
 </div>
-</div>
+</div> */}
 </div>
     );
 };

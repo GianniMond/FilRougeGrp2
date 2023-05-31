@@ -1,7 +1,10 @@
-const __BASE_URL = 'http://localhost:7777/api';
 
-const __HEADERS = {
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
-}
-
+export const ListPersonnes = [
+    {
+        id : 1,
+        Nom : "Chombeau",
+        Prenom : "Pamela",
+        Email : "pamela.chombeau@outlook.fr",
+        MotDePasse : "pamela.chombeau"
+    }
+]
