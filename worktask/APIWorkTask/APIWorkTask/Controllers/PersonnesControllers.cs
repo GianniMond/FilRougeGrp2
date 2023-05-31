@@ -1,28 +1,66 @@
 ﻿using APIWorkTask.Data;
+using APIWorkTask.Models;
 using APIWorkTask.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace APIWorkTask.Controllers
 {
-    public class PersonnesControllers : Controller
+    [ApiController]
+    [Route("api/[controller]")]
+    public class PersonnesController : ControllerBase
     {
-        [ApiController]
-        [Route("api/[controller]")]
+        private readonly PersonneRepositories _repository;
 
-        public class PersonesController : ControllerBase
+        public PersonnesController(PersonneRepositories repository)
         {
-            private readonly PersonneRepositories _repository;
+            _repository = repository;
+        }
 
-            [HttpGet("{id}")]
-            public IActionResult GetById(int id)
-            {
-                var personne = _repository.GetById(id);
-                if (personne == null)
-                    return NotFound();
 
-                return Ok(personne);
-            }
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var personne = _repository.GetById(id);
+            if (personne == null)
+                return NotFound();
 
+            return Ok(personne);
+        }
+
+        [HttpPost]
+        public IActionResult Create(Personne personne)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var createdPersonne = _repository.Create(personne);
+            return CreatedAtAction(nameof(GetById), new { id = createdPersonne.Id }, createdPersonne);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, Personne personne)
+        {
+            if (id != personne.Id)
+                return BadRequest();
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var updatedPersonne = _repository.Update(personne);
+            if (updatedPersonne == null)
+                return NotFound();
+
+            return Ok(updatedPersonne);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var deletedPersonne = _repository.Delete(id);
+            if (deletedPersonne == null)
+                return NotFound();
+
+            return NoContent();
         }
     }
 }

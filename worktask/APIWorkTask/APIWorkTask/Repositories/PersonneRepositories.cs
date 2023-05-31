@@ -39,12 +39,19 @@ namespace APIWorkTask.Repositories
         public bool Update(Personne personne)
         {
             var newPersonne = GetById(personne.Id);
+            if (newPersonne == null)
+                return false;
+
             if (newPersonne.Nom != personne.Nom)
                 newPersonne.Nom = personne.Nom;
+
             if (newPersonne.Prenom != personne.Prenom)
                 newPersonne.Prenom = personne.Prenom;
+
             if (newPersonne.Email != personne.Email)
                 newPersonne.Email = personne.Email;
+
+            _context.SaveChanges();
             return true;
         }
     }
