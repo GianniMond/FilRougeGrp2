@@ -6,10 +6,12 @@ const FormulaireProjet = ({ projet}) => {
 
   const titre = "";
   const description = "";
+  const projetsTableau = [];
 
   let navigate = useNavigate();
 
   function addProjet() {
+    projetsTableau = new {titre, description}
     return navigate("./ProjectList")
   }
 
@@ -21,11 +23,11 @@ const FormulaireProjet = ({ projet}) => {
             <div className="form-control">
                     <div className="mb-4">
                         <label htmlFor="titre">Titre du projet</label>
-                        <input type="text" className='form-control' name="titre" id="titre" onChange={(e) => e.target.value} />
+                        <input type="text" className='form-control' name="titre" id="titre" onChange={(titre) => titre.target.value} />
                     </div>
                     <div className="mb-4">
                         <label htmlFor="titre">Description</label>
-                        <input type='textarea' className='form-control' name="desc" id="desc" onChange={(e) => e.target.value} />
+                        <input type='textarea' className='form-control' name="desc" id="desc" onChange={(description) => description.target.value} />
                     </div>
                     <button className='btn btn-success form-control' onClick={() => addProjet()}>Ajouter</button>
                     </div>

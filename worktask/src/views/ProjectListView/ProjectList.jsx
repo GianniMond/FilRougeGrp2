@@ -20,7 +20,7 @@ const ProjectList = ({projet, setProjet}) => {
 
         // <div>
             <div className='background_projet'>
-                    <button class="btn btn-outline-dark btn-lg m-5" onClick={useNavigate('./AjoutProjet')}>Ajouter un projet</button>
+                    <button class="btn btn-outline-dark btn-lg m-5" onClick={navigate('./AjoutProjet')}>Ajouter un projet</button>
                        {/* <div className='cards_projet'>
                           <div class="card">
                             { 
