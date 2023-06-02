@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './NavBar.css'
 import {
-    BrowserRouter,
     Routes,
     Route,
     Outlet,
@@ -12,14 +11,12 @@ import TeamList from '../../views/TeamListView/TeamList';
 import AuthAndConnex from '../../views/AuthAndConnexView/AuthAndConnex';
 import DetailProjetList from '../../views/DetailProjectListView/DetailProjectList';
 import AjoutProjet from '../../views/AjoutProjet/AjoutProjet';
-import { ListPersonnes, ListProjet } from '../../../Services/FetchApiServices';
 
 const NavBar = () => {
 
     return (
         <div>
             <div className='navbar'>
-                {/* Def des liens */}
                 <button className='bouton_navbar'>
                     <Link to="/projetList">Listes des projets</Link>
                 </button>
@@ -30,16 +27,15 @@ const NavBar = () => {
                     <a>Recherche</a>
                 </button>
                 <Link to="/detailProjetList"></Link>
+                <Link to="/AjoutProjet"></Link>
             </div>
-            {/* Création des Routes */}
             <Routes>
                 <Route path='/' element={<AuthAndConnex/>} />
                 <Route path='/projetList' element={<ProjetList/>} />
                 <Route path='/detailProjetList' element={<DetailProjetList/>} />
                 <Route path='/teamList' element={<TeamList/>} />
-                <Route path= '/AjoutProjet' element={<AjoutProjet projet={ListProjet} setProjet={setProjet}/>} />
+                <Route path= '/AjoutProjet' element={<AjoutProjet/>} />
             </Routes>
-            {/* Full Execution */}
             <Outlet />
 
         </div>

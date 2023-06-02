@@ -1,7 +1,6 @@
 import React from 'react';
 import './ProjectList.css';
 import { useNavigate } from 'react-router-dom';
-import './AjouterProjet';
 
 const ProjectList = ({projet, setProjet}) => {
 
@@ -21,8 +20,8 @@ const ProjectList = ({projet, setProjet}) => {
 
         // <div>
             <div className='background_projet'>
-                    <button class="btn btn-outline-dark btn-lg m-5" onClick={()=>AjouterProjet()}>Ajouter un projet</button>
-                       <div className='cards_projet'>
+                    <button class="btn btn-outline-dark btn-lg m-5" onClick={useNavigate('./AjoutProjet')}>Ajouter un projet</button>
+                       {/* <div className='cards_projet'>
                           <div class="card">
                             { 
                             projet.map((projet) => 
@@ -34,7 +33,7 @@ const ProjectList = ({projet, setProjet}) => {
                                     <li class="list-group-item"></li>
                                  </ol>
                             </div>
-                        </div>
+                        </div> */}
                 </div>           
     );
 };
