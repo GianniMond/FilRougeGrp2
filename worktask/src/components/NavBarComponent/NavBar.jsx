@@ -11,6 +11,8 @@ import ProjetList from '../../views/ProjectListView/ProjectList';
 import TeamList from '../../views/TeamListView/TeamList';
 import AuthAndConnex from '../../views/AuthAndConnexView/AuthAndConnex';
 import DetailProjetList from '../../views/DetailProjectListView/DetailProjectList';
+import AjoutProjet from '../../views/AjoutProjet/AjoutProjet';
+import { ListPersonnes, ListProjet } from '../../../Services/FetchApiServices';
 
 const NavBar = () => {
 
@@ -35,6 +37,7 @@ const NavBar = () => {
                 <Route path='/projetList' element={<ProjetList/>} />
                 <Route path='/detailProjetList' element={<DetailProjetList/>} />
                 <Route path='/teamList' element={<TeamList/>} />
+                <Route path= '/AjoutProjet' element={<AjoutProjet projet={ListProjet} setProjet={setProjet}/>} />
             </Routes>
             {/* Full Execution */}
             <Outlet />
