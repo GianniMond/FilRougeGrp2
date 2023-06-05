@@ -17,12 +17,12 @@ const DetailProjectList = () => {
     }, []);
 
     const handleTaskCreation = () => {
-        // Vérifiez si le nom de la nouvelle tâche est non vide
+    //    Vérifiez si le nom de la nouvelle tâche est non vide
         if (newTaskName.trim() === '') {
-            return;
-        }
+           return;
+       }
 
-        // Créez un nouvel objet tâche avec le nom saisi
+    //     // Créez un nouvel objet tâche avec le nom saisi
         const newTask = { name: newTaskName };
 
         // Effectuez une requête POST pour créer la nouvelle tâche
@@ -41,58 +41,54 @@ const DetailProjectList = () => {
     return (
         <div className='background'>
             <div className="pagestyle">
-                <div className='menu-left'>
-                    <div className='card teamproject'>Membres du projet</div>
-                </div>
                 <div className='cards_projet'>
-                    <div class="card">
-                        <div class="card-header"> Importante </div>
+                    <div className="card">
+                        <div className="card-header"> Importante </div>
                         <ul className="list-group list-group-flush">
-                            {tasks.map(task => (
-                                <li key={task.id} className="list-group-item">{task.name}</li>
-                            ))}
-                            <li class="list-group-item">Task2</li>
+                            
+                            <li className="list-group-item">Task2</li>
                         </ul>
                         <button className="btn btn-secondary bouton" onClick={handleTaskCreation}>
                             + Ajouter une tâche
-                        </button>                    </div>
+                        </button>
+                        </div>
+                    </div>                 
                     <div className='cards_projet'>
-                        <div class="card">
-                            <div class="card-header"> A faire </div>
-                            <ul class="list-group list-group-flush">
+                        <div className="card">
+                            <div className="card-header"> A faire </div>
+                            <ul className="list-group list-group-flush">
                             </ul>
                             <button className="btn btn-secondary bouton">+ Ajouter une tâche</button>
                         </div>
                     </div>
                     <div className='cards_projet'>
-                        <div class="card">
-                            <div class="card-header"> En cours </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Task1</li>
-                                <li class="list-group-item">Task2</li>
+                        <div className="card">
+                            <div className="card-header"> En cours </div>
+                            <ul className="list-group list-group-flush">
+                                <li className="list-group-item">Task1</li>
+                                <li className="list-group-item">Task2</li>
                             </ul>
                             <button className="btn btn-secondary bouton">+ Ajouter une tâche</button>
                         </div>
                     </div>
                     <div className='cards_projet'>
-                        <div class="card">
-                            <div class="card-header"> A verifier </div>
-                            <ul class="list-group list-group-flush">
+                        <div className="card">
+                            <div className="card-header"> A verifier </div>
+                            <ul className="list-group list-group-flush">
                             </ul>
                             <button className="btn btn-secondary bouton">+ Ajouter une tâche</button>
                         </div>
                     </div>
                     <div className='cards_projet'>
-                        <div class="card">
-                            <div class="card-header"> Terminée </div>
-                            <ul class="list-group list-group-flush">
+                        <div className="card">
+                            <div className="card-header"> Terminée </div>
+                            <ul className="list-group list-group-flush">
                             </ul>
                             <button className="btn btn-secondary bouton">+ Ajouter une tâche</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

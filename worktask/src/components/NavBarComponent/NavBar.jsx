@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './NavBar.css'
 import {
+    BrowserRouter,
     Routes,
     Route,
     Outlet,
@@ -11,8 +12,11 @@ import TeamList from '../../views/TeamListView/TeamList';
 import AuthAndConnex from '../../views/AuthAndConnexView/AuthAndConnex';
 import DetailProjetList from '../../views/DetailProjectListView/DetailProjectList';
 import AjoutProjet from '../../views/AjoutProjet/AjoutProjet';
+import { ProjetsListe } from '../../datas/ProjetList';
 
 const NavBar = () => {
+
+    const [projet, setProjet] = useState(ProjetsListe);
 
     return (
         <div>
@@ -31,10 +35,10 @@ const NavBar = () => {
             </div>
             <Routes>
                 <Route path='/' element={<AuthAndConnex/>} />
-                <Route path='/projetList' element={<ProjetList/>} />
+                <Route path='/projetList' element={<ProjetList projet ={projet} setProjet={setProjet} />} />
                 <Route path='/detailProjetList' element={<DetailProjetList/>} />
                 <Route path='/teamList' element={<TeamList/>} />
-                <Route path= '/AjoutProjet' element={<AjoutProjet/>} />
+                <Route path='/AjoutProjet' element={<AjoutProjet projet ={projet} setProjet={setProjet}/>} />
             </Routes>
             <Outlet />
 

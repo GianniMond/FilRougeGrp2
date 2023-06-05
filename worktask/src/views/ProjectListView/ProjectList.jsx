@@ -8,34 +8,50 @@ const ProjectList = ({projet, setProjet}) => {
 
     let navigate = useNavigate();
 
-    function AjouterProjet(){
- 
-    }
-    function handleTaskClick(event) {
+    function DetailProjet(event){
         event.preventDefault();
-        navigate("/detailProjetList");
-            
+        navigate("/detailProjetList")
     }
-    return (
+
+    function AjouterProjet(event){
+        event.preventDefault();
+        navigate("/AjoutProjet")
+    }
+
+   
+    return projet ?(
 
         // <div>
             <div className='background_projet'>
-                    <button class="btn btn-outline-dark btn-lg m-5" onClick={navigate('./AjoutProjet')}>Ajouter un projet</button>
-                       {/* <div className='cards_projet'>
-                          <div class="card">
+                    <button class="btn btn-outline-dark btn-lg m-5" onClick={AjouterProjet}>Ajouter un projet</button>
+                      
+                      
+                       
                             { 
-                            projet.map((projet) => 
-                            <div class="card-header">{projet.Titre}</div>
-                            ) 
-                            }
+                            projet.map((projet, index) => 
+                            <React.Fragment key={index}>
+
+                              <div className='cards_projet'>
+                          <div class="card">  
+                            <div class="card-header">{projet.titre}</div>
+                            
+                           
                             
                                  <ol class="list-group list-group-flush">
-                                    <li class="list-group-item"></li>
-                                 </ol>
-                            </div>
-                        </div> */}
+                                    <li class="list-group-item">{projet.description}</li>
+                                 </ol> 
+                                 <button class="btn btn-outline-dark btn-lg m-5" onClick={DetailProjet}>Detail du projet</button>
+                                 </div>
+                                  </div>
+                            </React.Fragment> 
+                            ) 
+                            }
+                           
                 </div>           
-    );
+    ) :
+    (<div>
+        <h3>Aucun projet en cours</h3>
+    </div>);
 };
 
 export default ProjectList;
