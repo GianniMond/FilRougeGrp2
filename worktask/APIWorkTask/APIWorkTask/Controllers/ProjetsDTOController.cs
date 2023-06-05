@@ -11,9 +11,9 @@ namespace APIWorkTask.Controllers
     [ApiController]
     public class ProjetsDTOController : Controller
     {
-        private readonly IRepository<Projets> _repository;
+        private readonly IRepository<Projet> _repository;
         private readonly IMapper _mapper;
-        public ProjetsDTOController(IRepository<Projets> repository, IMapper mapper)
+        public ProjetsDTOController(IRepository<Projet> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
@@ -22,7 +22,7 @@ namespace APIWorkTask.Controllers
         public IActionResult GetAll()
         {
             var projets = _repository.GetAll();
-            var projetsDTO = _mapper.Map<List<Projets>, List<ProjetsDTO>>(projets);
+            var projetsDTO = _mapper.Map<List<Projet>, List<ProjetsDTO>>(projets);
             return Ok(projetsDTO);
         }
 
@@ -37,7 +37,7 @@ namespace APIWorkTask.Controllers
                     Message = "Il n'existe aucune projet avec cet id"
                 });
 
-            var projetDTO = _mapper.Map<Projets, ProjetsDTO>(projet);
+            var projetDTO = _mapper.Map<Projet, ProjetsDTO>(projet);
 
             return Ok(new
             {
@@ -49,7 +49,7 @@ namespace APIWorkTask.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] ProjetsDTO projetDTO)
         {
-            var projet = _mapper.Map<ProjetsDTO, Projets>(projetDTO);
+            var projet = _mapper.Map<ProjetsDTO, Projet>(projetDTO);
 
             int createdAtId = _repository.Add(projet);
             if (createdAtId > 0)
@@ -61,7 +61,7 @@ namespace APIWorkTask.Controllers
         [HttpPut]
         public IActionResult Put(int id, [FromBody] ProjetsDTO projetDTO)
         {
-            var projet = _mapper.Map<ProjetsDTO, Projets>(projetDTO);
+            var projet = _mapper.Map<ProjetsDTO, Projet>(projetDTO);
             var projetFromDb = _repository.GetById(id);
 
             if (projetFromDb == null)

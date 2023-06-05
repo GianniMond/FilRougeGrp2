@@ -86,3 +86,6 @@ C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\obj\Debug\net6.0\refint\A
 C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\obj\Debug\net6.0\APIWorkTask.pdb
 C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\obj\Debug\net6.0\APIWorkTask.genruntimeconfig.cache
 C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\obj\Debug\net6.0\ref\APIWorkTask.dll
+C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\bin\Debug\net6.0\AutoMapper.dll
+C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Repos\FilRougeGrp2\worktask\APIWorkTask\APIWorkTask\bin\Debug\net6.0\Newtonsoft.Json.dll

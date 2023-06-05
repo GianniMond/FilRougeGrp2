@@ -83,5 +83,4 @@ namespace APIWorkTask.Controllers
             return BadRequest("La personne n'a pas était trouvée...");
         }
     }
-    }
 }

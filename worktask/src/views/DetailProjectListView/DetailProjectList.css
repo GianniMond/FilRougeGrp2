@@ -1,6 +1,6 @@
 .menu-left{    
     background-color: #05a8aa;
-    height: 85vh
+    background-size: 100% ; height: 85vh;
 }
 
 .bouton {
@@ -16,4 +16,11 @@
 .card{
     background-color: white;
     color:#dc602e;
+}
+
+.background{
+    background: radial-gradient(ellipse at top, #05a8aa, transparent),            
+                radial-gradient(ellipse at bottom, #b8d5b8, transparent);
+    background-size: 100%;
+    height: 85vh;
 }
